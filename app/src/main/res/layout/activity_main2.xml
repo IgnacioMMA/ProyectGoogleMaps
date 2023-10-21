@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057"
+        app:layout_constraintVertical_bias="0.225"
         tools:ignore="MissingConstraints">
 
         <EditText
@@ -38,17 +38,36 @@
             android:hint="Nombre" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnAgregar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:text="Agregar"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="151dp"
+        android:layout_height="313dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224">
+
+        <EditText
+            android:id="@+id/txtvLongUno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longitud" />
+
+        <EditText
+            android:id="@+id/txtvLongDos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longitud" />
+
+        <EditText
+            android:id="@+id/txtvLongTres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longitud" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayoutt"
@@ -57,10 +76,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057"
+        app:layout_constraintVertical_bias="0.224"
         tools:ignore="MissingConstraints">
 
         <EditText
@@ -82,35 +101,31 @@
             android:hint="Latitud" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="151dp"
-        android:layout_height="313dp"
-        android:orientation="vertical"
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="258dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#D81818"
+        android:text="Agregar"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direcciones"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057">
-
-        <EditText
-            android:id="@+id/txtvLongUno"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Longitud" />
-
-        <EditText
-            android:id="@+id/txtvLongDos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Longitud" />
-
-        <EditText
-            android:id="@+id/txtvLongTres"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Longitud" />
-    </LinearLayout>
+        app:layout_constraintVertical_bias="0.039" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

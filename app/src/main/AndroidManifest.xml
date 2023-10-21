@@ -41,6 +41,7 @@
             android:name=".MainActivity3">
             <!-- Otras configuraciones de Activity3 -->
         </activity>
+        
 
     </application>
 </manifest>
