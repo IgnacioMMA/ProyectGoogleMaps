@@ -36,14 +36,14 @@ public class MainActivity3 extends AppCompatActivity implements OnMapReadyCallba
         btnVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Aquí abrimos la Activity2 al hacer clic en el ImageView
+
                 Intent intent = new Intent(MainActivity3.this, MainActivity2.class);
                 startActivity(intent);
             }
         });
 
         try {
-            // Obtener valores de latitud y longitud desde el Intent
+
             float latitud1 = getIntent().getFloatExtra("Latitud1", 0.0f);
             float latitud2 = getIntent().getFloatExtra("Latitud2", 0.0f);
             float latitud3 = getIntent().getFloatExtra("Latitud3", 0.0f);
@@ -62,7 +62,7 @@ public class MainActivity3 extends AppCompatActivity implements OnMapReadyCallba
             }
         } catch (Exception e) {
             e.printStackTrace();
-            // Manejo de errores: Puedes mostrar un mensaje al usuario o tomar medidas adecuadas aquí.
+
         }
     }
 
@@ -90,7 +90,6 @@ public class MainActivity3 extends AppCompatActivity implements OnMapReadyCallba
             String name2 = getIntent().getStringExtra("name2");
             String name3 = getIntent().getStringExtra("name3");
 
-            // Agregar marcadores a las ubicaciones de latitud y longitud
             LatLng location1 = new LatLng(latitud1, longitud1);
             LatLng location2 = new LatLng(latitud2, longitud2);
             LatLng location3 = new LatLng(latitud3, longitud3);
@@ -99,15 +98,13 @@ public class MainActivity3 extends AppCompatActivity implements OnMapReadyCallba
             mMap.addMarker(new MarkerOptions().position(location2).title(name2));
             mMap.addMarker(new MarkerOptions().position(location3).title(name3));
 
-
-            // Mover la cámara a una ubicación inicial
             mMap.moveCamera(CameraUpdateFactory.newLatLng(MiUbicacion));
 
             mMap.setMinZoomPreference(4.0F);
             mMap.setMaxZoomPreference(18.0f);
         } catch (Exception e) {
             e.printStackTrace();
-            // Manejo de errores: Puedes mostrar un mensaje al usuario o tomar medidas adecuadas aquí.
+
         }
     }
 
@@ -123,7 +120,7 @@ public class MainActivity3 extends AppCompatActivity implements OnMapReadyCallba
             mMap.moveCamera(CameraUpdateFactory.newLatLng(mexico));
         } catch (Exception e) {
             e.printStackTrace();
-            // Manejo de errores: Puedes mostrar un mensaje al usuario o tomar medidas adecuadas aquí.
+
         }
     }
 
@@ -139,7 +136,7 @@ public class MainActivity3 extends AppCompatActivity implements OnMapReadyCallba
             mMap.moveCamera(CameraUpdateFactory.newLatLng(mexico));
         } catch (Exception e) {
             e.printStackTrace();
-            // Manejo de errores: Puedes mostrar un mensaje al usuario o tomar medidas adecuadas aquí.
+
         }
     }
 }
